@@ -1,7 +1,7 @@
 class CampersController < ApplicationController
 
   def index
-    render json: Camper.all
+    render json: Camper.all, status: :ok
   end
 
   def show
